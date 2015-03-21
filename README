@@ -1,0 +1,23 @@
+Darwin Streaming Server for RaspberryPi2
+
+[ How to install ]
+
+sudo ./buildtarball
+
+sudo groupadd qtss
+
+sudo useradd -g qtss qtss
+
+sudo ./Install
+
+[ Auto Start ]
+
+add /usr/local/sbin/streamingadminserver.pl to /etc/rc.local
+
+
+[ What's changed]
+
+Apply patch for linux.
+Change "Buildit" line 67, 68
+
+Linus.ppc) -> Linux.armv7l)
